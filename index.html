@@ -3,73 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MI PORTAFOLIOt</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="5602503.png">
+    <title>Portafolio de Producción Multimedia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script async src="java.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
-    
     <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <a href="index.html" class="nav-logo">Daniel Bolaños</a>
-            </div>
-        </nav>
+        <div class="container">
+            <h1>GIORYETH ARTUNDUAGA ROJAS</h1>
+            <p>Productor Multimedia</p>
+            <nav>
+                <ul>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <h1><b>MIS SERVICIOS</b></h1><br>
-    <p class="hola">¡Hola! Soy Daniel Bolaños, un apasionado de la producción multimedia con una sólida experiencia en transformar ideas en experiencias visuales impactantes. Aquí te presento los servicios que ofrezco:</p>
-    
-
-    <div class="container">
-        <div class="column-1">
-            <h3>PRODUCCIÓN DE VIDEO Y FOTOGRAFIA</h3>
-            <p>Me especializo en capturar y contar historias visuales que conectan con la audiencia. Desde la planificación hasta la filmación y fotografía, me aseguro de que cada proyecto refleje la esencia de la marca o el mensaje que se quiere transmitir. </p>
-         </div>
-
-        
-    
-         <div class="column-2">
-            <h3>EDICIÓN Y POSTPRODUCCIÓN</h3>
-            <p>La magia sucede en la sala de edición. Con un ojo crítico para los detalles, transformo el material en bruto en un producto final pulido. Utilizo herramientas de última generación para asegurar que cada proyecto esté a la altura de las expectativas.</p>  
-         </div>
-     </div>
-
-
-     <div class="container">
-        <div class="column-1">
-            <h3>ANIMACIÓN Y MOTION GRAPHICS</h3>
-            <P>Me encanta dar vida a las ideas a través de la animación y los gráficos en movimiento. Ya sea para un video explicativo o una campaña promocional, creo piezas visuales dinámicas que capturan la atención y comunican el mensaje de manera efectiva.</P> 
+    <section id="hero">
+        <div class="container">
+            <h2>Bienvenido a mi portafolio</h2>
+            <p>Descubre mis últimos proyectos y habilidades en producción multimedia.</p>
+            <a href="#proyectos" class="btn">Ver Proyectos</a>
         </div>
-
-
-         <div class="column-2">
-            <h3>DESARROLLO DE CONTENIDO DIGITAL</h3>
-            <p>Diseño y creo contenido digital que está optimizado para todas las plataformas. Ya se trate de redes sociales, sitios web o campañas publicitarias, mi objetivo es desarrollar estrategias multimedia que amplifiquen la presencia y el impacto online.</p>
-        </div>
-     </div>
-
-
-     <div class="container">
-        <div class="column-1">
-            <h3>CONSULTORÍA CREATIVA</h3>
-            <p>Trabajo de la mano con mis clientes para ayudarles a definir y desarrollar su visión creativa. Desde la concepción de la idea hasta su ejecución, me comprometo a que cada proyecto sea un reflejo auténtico de los objetivos y la identidad de la marca.</p>
-        </div>
-
-         <div class="column-2">
-            <h3>PRODUCCIÓN DE EVENTOS EN VIVO</h3>
-            <P>Tengo experiencia en la producción y transmisión de eventos en vivo. Capturo cada momento crucial, asegurando que la experiencia sea compartida con una audiencia más amplia, manteniendo siempre los más altos estándares de calidad.</P>
-        </div>
-     </div>   
-
-     <img src="5602503.png" width="30%">
-     
-     <section class="gallery-button-section">
-        <a target="_blank" href="galeria.html" class="gallery-button">Ver Galería</a>
     </section>
 
-    
+    <section id="proyectos">
+        <div class="container">
+            <h2>Proyectos</h2>
+            <div class="projects">
+                <div class="project w-100">
+                    <img src="img/Crocodile Clipart.jfif" alt="Proyecto 1">
+                    <div class="overlay">
+                        <h3>ILUSTRACIÓN</h3>
+                        <p>Dibujo y creacion de piezas artisiticas</p>
 
-    
+                        <div class="card-body">
+                            <button class="btn btn-primary like-btn" onclick="meGusta()">Me Gusta
+                                <span id="gusta"></span>
+                            </button>
+                        </div> <br>
+                        <div class="card-body">
+                            <button class="btn btn-primary like-btn" onclick="NomeGusta()">No me Gusta
+                                <span id="no_me_gusta"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project w-100 mt-2px">
+                    <img src="img/logos lambee.png" alt="Proyecto 2">
+                    <div class="overlay">
+                        <h3>LOGOS</h3>
+                        <p>Creacion de branding en general</p>
+                        <div class="card-body">
+                            <button class="btn btn-primary like-btn" onclick="meGusta1()">Me Gusta
+                                <span id="gusta1"></span>
+                            </button>
+                        </div> <br>
+                        <div class="card-body">
+                            <button class="btn btn-primary like-btn" onclick="NomeGusta()">No me Gusta
+                                <span id="no_me_gusta"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project w-100">
+                    <img src="img/My Selfie Character (head animation).jfif" alt="Proyecto 3">
+                    <div class="overlay">
+                        <h3>DISEÑO</h3>
+                        <p>Diseño piezas graficas</p>
+                        <div class="card-body">
+                            <button class="btn btn-primary like-btn" onclick="meGusta()">Me Gusta
+                                <span id="gusta"></span>
+                            </button>
+                        </div> <br>
+                        <div class="card-body">
+                            <button class="btn btn-primary like-btn" onclick="NomeGusta()">No me Gusta
+                                <span id="no_me_gusta"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <div class="skills">
+                <div class="skill">
+                    <h3>Edición de Video</h3>
+                    <p>Capacidad para editar video en alta calidad utilizando software profesional como Adobe Premiere Pro y Final Cut Pro.</p>
+                </div>
+                <div class="skill">
+                    <h3>Animación 2D y 3D</h3>
+                    <p>Experiencia en la creación de animaciones 2D y 3D utilizando herramientas como After Effects y Blender.</p>
+                </div>
+                <div class="skill">
+                    <h3>Diseño Gráfico</h3>
+                    <p>Diseño de material gráfico para medios impresos y digitales con Adobe Photoshop e Illustrator.</p>
+                </div>
+                <div class="skill">
+                    <h3>Fotografía</h3>
+                    <p>Fotografía profesional y edición de imágenes con Lightroom, enfocándome en retratos y fotografía de producto.</p>
+                </div>
+                <div class="skill">
+                    <h3>Desarrollo Web</h3>
+                    <p>Desarrollo de sitios web interactivos y responsivos utilizando HTML, CSS, y JavaScript.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios">
+        <div class="container">
+            <h2>Testimonios</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"El trabajo de Gior superó nuestras expectativas. La calidad del video final fue excepcional y el proceso fue muy profesional."</p>
+                    <h4>- Cliente 1</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Trabajar con esta Productora Multimedial fue una experiencia fantástica. La animación que creó para nuestra campaña fue increíble."</p>
+                    <h4>- Cliente 2</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Gracias a Gioryeth por el sitio web impresionante que desarrolló para nosotros. Altamente recomendado."</p>
+                    <h4>- Cliente 3</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form action="enviar.php" method="post">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Gioryeth Productora Multimedia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
