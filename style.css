@@ -1,0 +1,87 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(26, 26, 91);
+    margin: 0px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;  
+}
+
+.hola {
+    padding: 10px;
+    text-align: center;
+}
+
+header {
+    background-color: #04042a;
+    padding: 10px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.nav-logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+.container{
+    display: flex; 
+}
+
+.column-1 {
+text-align: justify;
+padding: 20px;
+}
+
+.column-2 {
+    text-align: justify;
+    padding: 20px;
+}
+
+
+.gallery-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #04042e;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-button:hover {
+    background-color: #3aa9fe;
+    transform: translateY(-5px);
+}
+
+.gallery-button:active {
+    background-color: #2839a9;
+    transform: translateY(0);
+}
+
+/* Estilos para la sección del botón (opcional) */
+.gallery-button-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+
