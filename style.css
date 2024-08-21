@@ -1,87 +1,226 @@
 body {
     font-family: 'Poppins', sans-serif;
-    color: rgb(255, 255, 255);
-    background-color: rgb(26, 26, 91);
-    margin: 0px;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
 }
-
 h1 {
-    text-align: center;  
+    text-align: center;
+}
+p {
+    text-align: justify;
+    margin: 10px;
 }
 
-.hola {
-    padding: 10px;
+.cn {
     text-align: center;
+}
+
+.bb {
+    text-align: center;
+}
+
+
+ul {
+    list-style-type: none;
 }
 
 header {
-    background-color: #04042a;
-    padding: 10px 0;
+    text-align: center;
+    background-color: #0047aa;
+    color: white;
+    padding: 1em 0;
 }
 
-.nav-container {
+.carousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: 2em auto;
+    overflow: hidden;
+}
+
+.carousel {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-    padding: 10px;
+    transition: transform 0.4s ease-in-out;
 }
 
-.nav-logo {
-    color: #fff;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-
-
-.container{
-    display: flex; 
-}
-
-.column-1 {
-text-align: justify;
-padding: 20px;
-}
-
-.column-2 {
-    text-align: justify;
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
     padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
+.carousel-item video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
 
-.gallery-button {
-    display: inline-block;
-    padding: 15px 30px;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #fff;
-    background-color: #04042e;
+.card-content {
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.like-btn, .dislike-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
     border: none;
     border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
-    transition: background-color 0.3s ease, transform 0.3s ease;
     cursor: pointer;
+    font-size: 16px;
 }
 
-.gallery-button:hover {
-    background-color: #3aa9fe;
-    transform: translateY(-5px);
+.like-btn:hover, .dislike-btn:hover {
+    background-color: #45a049;
 }
 
-.gallery-button:active {
-    background-color: #2839a9;
-    transform: translateY(0);
+.dislike-btn {
+    background-color: #f44336;
 }
 
-/* Estilos para la sección del botón (opcional) */
-.gallery-button-section {
+.dislike-btn:hover {
+    background-color: #e53935;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     text-align: center;
-    margin: 50px 0;
+}
+
+.card h3 {
+    margin: 0 0 10px;
+}
+
+.card p {
+    margin: 0;
+}
+
+
+.gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+
+.button-container {
+    text-align: center;
+}
+
+.feria-sena-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #007bff; /* Color azul representativo */
+    border: none;
+    border-radius: 30px; /* Bordes redondeados */
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feria-sena-button:hover {
+    background-color: #0056b3; /* Azul más oscuro al hacer hover */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+.feria-sena-button:active {
+    background-color: #003a80; /* Azul más oscuro al hacer clic */
+    transform: scale(1.03); /* Reducción ligera al hacer clic */
+}
+
+h4 {
+    text-align: center;
 }
 
 
